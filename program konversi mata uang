@@ -1,0 +1,36 @@
+// Tugas TLS membuat program mata uang dollar amerika, ringgit dan euro ke rupiah
+#include <iostream>
+#define kurs_dollar 15303
+#define kurs_ringgit 3300
+#define kurs_euro 15000
+
+using namespace std;
+
+int main() {
+    string mata_uang;
+    cout << "Selamat Datang di program konversi mata uang dollar, won dan euro ke mata uang rupiah" << endl;
+    cout << "Silahkan pilih mata uang yang ingin dikonversi" << endl;
+    cin >> mata_uang ;
+    
+    if (mata_uang == "dollar") {
+        int rupiah;
+        cout << "masukkan nilai mata uang dollar yang ingin dikonversi" << endl;
+        cin >> rupiah;
+        cout << "hasil kurs dollar  " << kurs_dollar * rupiah << endl;
+    }
+    
+    if (mata_uang == "ringgit") {
+        int rupiah ;
+        cout << "masukkan nilai mata uang ringgit yang ingin dikonversi" <<endl;
+        cin >> rupiah;
+        cout << "hasil kurs ringgit   " << kurs_ringgit * rupiah << endl;
+    }
+    if (mata_uang == "euro") {
+        int rupiah ;
+        cout << "masukkan nilai mata uang euro yang ingin dikonversi" <<endl;
+        cin >> rupiah ;
+        cout << "hasil kurs euro    " << kurs_euro * rupiah << endl;
+    }
+    
+    return 0;
+}
